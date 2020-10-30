@@ -41,7 +41,6 @@ module.exports = {
         Mansão Thug Stronda formou
         Sem caô, gata, vem fazer amor
         Mansão Thug Stronda formou
-        Sem caô, gata, vem fazer amor
         `);
     }
 }
