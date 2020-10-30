@@ -39,7 +39,7 @@ client.on('message', message =>{
    else if(cmd === 'mansaothugstronda'){
        client.commands.get('mansaothugstronda').execute(message, args);
    }
-   else if(cmd == 'chapao'){
+   else if(cmd === 'chapao'){
        const imgEmbed = new Discord.MessageEmbed()
        .setTitle('Nathan Chapao')
        .attachFiles(['./assets/nathanchapao.jpg'])
@@ -47,6 +47,55 @@ client.on('message', message =>{
 
        message.channel.send(imgEmbed);
    }
+   else if(cmd === 'cargoconfianca'){
+       const imgEmbed = new Discord.MessageEmbed()
+       .setTitle('Cargo de Confianca')
+       .attachFiles(['./assets/cargoconfianca.png'])
+       .setImage('attachment://cargoconfianca.png');
+
+       message.channel.send(imgEmbed);
+   }
+   else if(cmd === 'carlaocoisaboa'){
+       const imgEmbed = new Discord.MessageEmbed()
+       .setTitle('AO COISA BOA')
+       .attachFiles(['./assets/carlaocoisaboa.png'])
+       .setImage('attachment://carlaocoisaboa.png');
+
+       message.channel.send(imgEmbed);
+   }
+   else if(cmd === 'felipecoringa'){
+       const imgEmbed = new Discord.MessageEmbed()
+       .setTitle('WHY SO SERIOUS?')
+       .attachFiles(['./assets/felipecoringa.JPG'])
+       .setImage('attachment://felipecoringa.JPG');
+
+       message.channel.send(imgEmbed);
+   }
+   else if(cmd === 'furlanvesgo'){
+       const imgEmbed = new Discord.MessageEmbed()
+       .setTitle('PROCURA O MENISCO')
+       .attachFiles(['./assets/furlanvesgo.png'])
+       .setImage('attachment://furlanvesgo.png');
+
+       message.channel.send(imgEmbed);
+   }
+   else if(cmd === 'luisaocaule'){
+       const imgEmbed = new Discord.MessageEmbed()
+       .setTitle('LUISAO O HOMEM DE ITU')
+       .attachFiles(['./assets/luisaocaule.png'])
+       .setImage('attachment://luisaocaule.png');
+
+       message.channel.send(imgEmbed);
+   }
+   else if(cmd === 's4n4h4ck3r'){
+       const imgEmbed = new Discord.MessageEmbed()
+       .setTitle('O HOMEM MAIS PROCURADO DE APARECIDA DO NORTE')
+       .attachFiles(['./assets/sanahacker.jpg'])
+       .setImage('attachment://sanahacker.jpg');
+
+       message.channel.send(imgEmbed);
+   }
+
 })
 
 client.login(process.env.TOKEN);
