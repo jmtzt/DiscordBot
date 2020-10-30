@@ -36,6 +36,9 @@ client.on('message', message =>{
    else if(cmd === 'naogostar'){
        client.commands.get('naogostar').execute(message, args);
    }
+   else if(cmd === 'mansaothugstronda'){
+       client.commands.get('mansaothugstronda').execute(message, args);
+   }
    else if(cmd == 'chapao'){
        const imgEmbed = new Discord.MessageEmbed()
        .setTitle('Nathan Chapao')
@@ -43,9 +46,7 @@ client.on('message', message =>{
        .setImage('attachment://nathanchapao.jpg');
 
        message.channel.send(imgEmbed);
-
    }
-
 })
 
 client.login(process.env.TOKEN);
